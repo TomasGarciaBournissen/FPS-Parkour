@@ -1,26 +1,46 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!64 &2127992819248429661
-MeshCollider:
+--- !u!1 &8521982161112141905
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1011953452552083187}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: db6ad945e2658d8438bd689d79622773, type: 3}
---- !u!54 &2075134867572104232
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4029593388829631134}
+  - component: {fileID: 2670959740049741000}
+  - component: {fileID: 5485310240541989137}
+  - component: {fileID: 6775188697479793328}
+  m_Layer: 0
+  m_Name: Barril
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4029593388829631134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8521982161112141905}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 45.67466, y: 12.192478, z: 16.224363}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8158154104162167613}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &2670959740049741000
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1011953452552083187}
+  m_GameObject: {fileID: 8521982161112141905}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -30,28 +50,54 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1001 &1011953452552114259
+--- !u!64 &5485310240541989137
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8521982161112141905}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300002, guid: db6ad945e2658d8438bd689d79622773, type: 3}
+--- !u!114 &6775188697479793328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8521982161112141905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e29c47783b7824f97150d2d730df07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &8158154104162300349
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 4029593388829631134}
     m_Modifications:
     - target: {fileID: 100000, guid: db6ad945e2658d8438bd689d79622773, type: 3}
       propertyPath: m_Name
-      value: barril
+      value: Barril
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db6ad945e2658d8438bd689d79622773, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 47.285423
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db6ad945e2658d8438bd689d79622773, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.950903
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db6ad945e2658d8438bd689d79622773, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.668684
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db6ad945e2658d8438bd689d79622773, type: 3}
       propertyPath: m_LocalRotation.x
@@ -87,9 +133,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db6ad945e2658d8438bd689d79622773, type: 3}
---- !u!1 &1011953452552083187 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: db6ad945e2658d8438bd689d79622773,
+--- !u!4 &8158154104162167613 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: db6ad945e2658d8438bd689d79622773,
     type: 3}
-  m_PrefabInstance: {fileID: 1011953452552114259}
+  m_PrefabInstance: {fileID: 8158154104162300349}
   m_PrefabAsset: {fileID: 0}

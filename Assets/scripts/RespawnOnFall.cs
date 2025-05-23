@@ -17,7 +17,7 @@ public class RespawnOnFall : MonoBehaviour
     {
         if (transform.position.y < yRespawnValue)
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Parkour");
             Debug.Log("fall");
         }   
     }
