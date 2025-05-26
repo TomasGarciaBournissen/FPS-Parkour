@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class ColisionDetector : MonoBehaviour
 {
+    int Puntos = 0;
     // Start is called before the first frame update
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("contacto");
-        Debug.Log(collision.gameObject.name);
+      
+      
         if (collision.gameObject.name == "Player")
         {
             Destroy(gameObject);
+            Puntos++;
+            Debug.Log(Puntos);
         }
             
     }
