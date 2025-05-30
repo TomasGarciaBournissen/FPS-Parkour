@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6180615805389649664}
   - component: {fileID: 2211623400873038169}
   - component: {fileID: 1522164342774238980}
-  - component: {fileID: 3615152818548164315}
+  - component: {fileID: 6449521755744285436}
   m_Layer: 0
   m_Name: CajaMadera
   m_TagString: Untagged
@@ -63,7 +63,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3615152818548164315
+--- !u!114 &6449521755744285436
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,9 +72,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6480129874286621380}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48e29c47783b7824f97150d2d730df07, type: 3}
+  m_Script: {fileID: 11500000, guid: ea9640314782f8a4c96253e3f786e496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moneyManager: {fileID: 0}
+  cost: 200
 --- !u!1001 &7272176660900612712
 PrefabInstance:
   m_ObjectHideFlags: 0
