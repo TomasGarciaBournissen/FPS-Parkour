@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class MoneyManager : MonoBehaviour
+public class HPManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float money;
+    public float HP;
     public UI_Manager uiManager;
 
     private void Start()
@@ -13,19 +14,22 @@ public class MoneyManager : MonoBehaviour
         uiManager = FindObjectOfType<UI_Manager>();
     }
 
-    public bool UpdateMoney(float amount) { 
-        if (money + amount < 0)
+
+    public bool UpdateHP (float damage)
+    {
+        if (HP <= damage)
         {
-            //frena la compra
-            Debug.Log("Dinero Insuficiente");
+          
+            SceneManager.LoadScene("Parkour");
             return false;
         }
         else
         {
-            money += amount;
-            uiManager.UpdateMoneyText(money.ToString());
+            HP -= damage;
+            uiManager.UpdateHPText(HP.ToString());
             return true;
         }
-        
+
     }
 }
+
